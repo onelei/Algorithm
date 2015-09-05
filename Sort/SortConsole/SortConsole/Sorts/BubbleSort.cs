@@ -1,9 +1,12 @@
-﻿using System;
+﻿/*
+ * 冒泡排序; 
+ */
+
 using System.Collections.Generic;
 
 namespace SortConsole
 {
-    public class SortBubble
+    public class BubbleSort
     {    
         // from small to big;
         public static void Sort(List<int> tmpList)
@@ -13,6 +16,7 @@ namespace SortConsole
             {
                 return;
             }
+            bool isExchange = false;
             int length=tmpList.Count;
             int tmp;
             for (int i = 0; i < length;++i )
@@ -24,6 +28,7 @@ namespace SortConsole
                         tmp = tmpList[j];
                         tmpList[j] = tmpList[i];
                         tmpList[i] = tmp;
+                        isExchange = true;
                     }
                 }
             }

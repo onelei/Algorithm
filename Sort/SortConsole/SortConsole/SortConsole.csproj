@@ -41,7 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Sorts\SortBubble.cs" />
+    <Compile Include="Sorts\InsertSort.cs" />
+    <Compile Include="Sorts\BubbleSort.cs" />
     <Compile Include="Debug.cs" />
     <Compile Include="Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
