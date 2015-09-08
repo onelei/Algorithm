@@ -41,7 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Sorts\RadixSort.cs" />
     <Compile Include="Sorts\HeapSort.cs" />
+    <Compile Include="Sorts\MergeSort.cs" />
     <Compile Include="Sorts\QuickSort.cs" />
     <Compile Include="Sorts\InsertSort.cs" />
     <Compile Include="Sorts\BubbleSort.cs" />

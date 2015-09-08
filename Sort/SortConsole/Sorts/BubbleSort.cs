@@ -30,6 +30,8 @@ namespace SortConsole
                 isExchange = false;
                 for (int j = 0; j < length-1-i;j++ )
                 {
+                    // 每趟和相邻的相互比较;
+                    // 将最小的和前面的交换,最小的放在最前面;
                     if(tmpList[j+1]<tmpList[j])
                     {
                         tmp = tmpList[j];

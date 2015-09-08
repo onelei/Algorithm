@@ -24,6 +24,9 @@ class Test
         testQuickSort();
         // test HeapSort;
         testHeapSort();
+        // test MergeSort;
+        testMergeSort();
+
 
         Console.ReadLine();
     }
@@ -90,11 +93,23 @@ class Test
         //  开始监视代码运行时间;
         Stopwatch stopwatch = new Stopwatch();
         stopwatch.Start();
-        HeapSort.Sort(mNumbers, mNumbers.Count - 1);
+        HeapSort.Sort(mNumbers, mNumbers.Count);
         stopwatch.Stop();
-        Console.WriteLine("test QuickSort=> {0}毫秒", stopwatch.Elapsed.TotalMilliseconds);
+        Console.WriteLine("test HeapSort=> {0}毫秒", stopwatch.Elapsed.TotalMilliseconds);
         TestDebug.log(mNumbers);
     }
-    
+
+    static void testMergeSort()
+    {
+        // test MergeSort;
+        resetNumber();
+        //  开始监视代码运行时间;
+        Stopwatch stopwatch = new Stopwatch();
+        stopwatch.Start();
+        MergeSort.Sort(mNumbers,0,mNumbers.Count-1);
+        stopwatch.Stop();
+        Console.WriteLine("test MergeSort=> {0}毫秒", stopwatch.Elapsed.TotalMilliseconds);
+        TestDebug.log(mNumbers);
+    }
 }
 
