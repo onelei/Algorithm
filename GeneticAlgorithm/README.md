@@ -10,7 +10,7 @@
 ## 轮盘赌
 
 ```
-/// <summary>
+        /// <summary>
         /// 更新下一代;
         /// 基于轮盘赌选择方法，进行基因型的选择;
         /// </summary>
@@ -82,7 +82,7 @@
 ## 交叉操作
 
 ```
-/// <summary>
+        /// <summary>
         /// 交叉操作;
         /// </summary>
         static void CrossOperate()
@@ -113,7 +113,7 @@
 ## 变异操作
 
 ```
-/// <summary>
+        /// <summary>
         /// 变异操作;
         /// </summary>
         static void VariationOperate()
